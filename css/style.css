@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+html,
+body,
+* {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  font-size: 14px;
+  text-decoration: none; }
+
+h1,
+h1 *,
+h2,
+h2 * {
+  font-size: 30px; }
+
+.field--name-field-tags {
+  margin-top: 30px; }
+  .field--name-field-tags * {
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300; }
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999; }
+  header .region-header {
+    display: flex;
+    padding: 56px 165px;
+    justify-content: space-between;
+    width: calc(100% - 330px);
+    transition: all linear 0.1s; }
+    header .region-header.scrolled {
+      padding: 15px 165px; }
+    header .region-header img {
+      width: 220px; }
+    header .region-header ul.menu {
+      margin: 0;
+      display: flex; }
+      header .region-header ul.menu li {
+        margin-left: 85px; }
+        header .region-header ul.menu li a {
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-top: 10px;
+          display: block;
+          position: relative; }
+          header .region-header ul.menu li a:hover {
+            cursor: pointer; }
+          header .region-header ul.menu li a.is-active {
+            color: #626262; }
+
+main {
+  margin-top: 240px;
+  padding: 0px 250px; }
+  main .view-frontpage .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    main .view-frontpage .view-content .views-row {
+      width: 50%;
+      border-color: transparent;
+      box-sizing: border-box; }
+      main .view-frontpage .view-content .views-row img {
+        width: 100%; }
+      main .view-frontpage .view-content .views-row:nth-child(odd) {
+        border-right: solid 30px transparent; }
+      main .view-frontpage .view-content .views-row:nth-child(even) {
+        border-left: solid 30px transparent; }
+      main .view-frontpage .view-content .views-row .field--name-body p {
+        margin-top: 20px; }
+      main .view-frontpage .view-content .views-row .field--name-field-tags {
+        margin-top: 30px; }
+  main #block-homepage-top-content {
+    position: relative; }
+    main #block-homepage-top-content h2 {
+      padding-top: 13px; }
+    main #block-homepage-top-content:before {
+      content: "";
+      width: 100px;
+      height: 4px;
+      background-color: #626262;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  main figure.caption-img {
+    margin: 0; }
+    main figure.caption-img img {
+      width: 100%; }
+    main figure.caption-img figcaption {
+      padding: 25px;
+      font-style: italic; }
+
+footer {
+  background-color: #f0f0f0;
+  padding: 44px 165px;
+  margin-top: 150px; }
+  footer a,
+  footer * {
+    color: #000; }
+  footer ul {
+    display: inline-flex; }
+    footer ul li.menu-item {
+      margin-right: 40px; }
+  footer .region-footer {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%; }
+
+body.page-node-type-article main {
+  display: flex;
+  justify-content: space-between; }
+  body.page-node-type-article main .layout-content {
+    width: 70%;
+    border-right: solid 50px transparent; }
+    body.page-node-type-article main .layout-content .field--name-field-tags {
+      margin-top: 20px;
+      margin-bottom: 40px; }
+    body.page-node-type-article main .layout-content h1 {
+      margin: 0; }
+  body.page-node-type-article main .layout-sidebar-second {
+    width: 30%; }
+    body.page-node-type-article main .layout-sidebar-second h2 {
+      color: #b4ad9e;
+      text-transform: uppercase;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 300;
+      font-size: 14px; }
+    body.page-node-type-article main .layout-sidebar-second li {
+      margin-bottom: 20px; }
+      body.page-node-type-article main .layout-sidebar-second li:last-child {
+        margin-bottom: 0px; }

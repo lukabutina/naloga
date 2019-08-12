@@ -1,0 +1,49 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 999;
+
+  .region-header {
+    display: flex;
+    padding: 56px 165px;
+    justify-content: space-between;
+    width: calc(100% - 330px);
+    transition: all linear 0.1s;
+
+    &.scrolled {
+      padding: 15px 165px;
+    }
+
+    img {
+      width: 220px;
+    }
+
+    ul.menu {
+      margin: 0;
+      display: flex;
+
+      li {
+        margin-left: 85px;
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-top: 10px;
+          display: block;
+          position: relative;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &.is-active {
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}

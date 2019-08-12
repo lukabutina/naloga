@@ -1,0 +1,17 @@
+{
+  "name": "adchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "onchange 'sass/**/*.scss' -- npm run compile",
+    "compile": "node-sass sass/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "onchange": "^6.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  background-color: #f0f0f0;
+  padding: 44px 165px;
+  margin-top: 150px;
+
+  a,
+  * {
+    color: #000;
+  }
+
+  ul {
+    display: inline-flex;
+
+    li.menu-item {
+      margin-right: 40px;
+    }
+  }
+
+  .region-footer {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+main {
+  margin-top: 240px;
+  padding: 0px 250px;
+
+  .view-frontpage .view-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .views-row {
+      width: 50%;
+      border-color: transparent;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+      }
+
+      &:nth-child(odd) {
+        border-right: solid 30px transparent;
+      }
+
+      &:nth-child(even) {
+        border-left: solid 30px transparent;
+      }
+
+      .field--name-body {
+        p {
+          margin-top: 20px;
+        }
+      }
+
+      .field--name-field-tags {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  #block-homepage-top-content {
+    position: relative;
+
+    h2 {
+      padding-top: 13px;
+    }
+
+    &:before {
+      content: "";
+      width: 100px;
+      height: 4px;
+      background-color: $main-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  figure.caption-img {
+    margin: 0;
+
+    img {
+      width: 100%;
+    }
+
+    figcaption {
+      padding: 25px;
+      font-style: italic;
+    }
+  }
+}
