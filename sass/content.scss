@@ -1,6 +1,5 @@
 main {
   margin-top: 240px;
-  padding: 0px 250px;
 
   .view-frontpage .view-content {
     display: flex;
@@ -13,14 +12,6 @@ main {
       box-sizing: border-box;
       img {
         width: 100%;
-      }
-
-      &:nth-child(odd) {
-        border-right: solid 30px transparent;
-      }
-
-      &:nth-child(even) {
-        border-left: solid 30px transparent;
       }
 
       .field--name-body {

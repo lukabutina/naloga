@@ -13,6 +13,11 @@ header {
     width: calc(100% - 330px);
     transition: all linear 0.1s;
 
+    .mobile-menu {
+      border: 0;
+      background-color: transparent;
+    }
+
     &.scrolled {
       padding: 15px 165px;
     }
@@ -26,7 +31,6 @@ header {
       display: flex;
 
       li {
-        margin-left: 85px;
         a {
           font-size: 14px;
           text-decoration: none;

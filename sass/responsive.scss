@@ -1,0 +1,158 @@
+//Mobile portrait
+@media screen and (max-width: $break-sm) {
+}
+
+//Mobile landscape
+@media screen and (min-width: $break-xsm) {
+}
+
+//Tablet portrait
+
+@media screen and (max-width: $break-sm) {
+  header {
+    .region-header {
+      padding: 15px 10px;
+      width: initial;
+      flex-direction: column;
+
+      nav {
+        position: relative;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &:not(.open) {
+          display: none;
+        }
+      }
+
+      &.scrolled {
+        padding: 15px 10px;
+      }
+    }
+
+    .mobile-menu {
+      position: absolute;
+      width: 40px;
+      top: 14px;
+      right: 10px;
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  main {
+    padding: 0px 10px;
+    margin-top: 110px;
+
+    img {
+      width: 100%;
+    }
+
+    .view-frontpage .view-content .views-row {
+      width: 100%;
+    }
+  }
+  body.page-node-type-article {
+    main {
+      flex-direction: column;
+
+      .layout-content {
+        width: 100%;
+      }
+
+      .layout-sidebar-second {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    padding: 20px 10px;
+
+    .region-footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        li {
+          margin: 0px;
+        }
+      }
+    }
+
+    #block-footercreated {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: $break-sm + 1px) {
+  header {
+    .mobile-menu {
+      display: none;
+    }
+
+    .region-header {
+      ul.menu {
+        li {
+          margin-left: 85px;
+        }
+      }
+    }
+  }
+
+  body.page-node-type-article {
+    main {
+      flex-direction: row;
+
+      .layout-content {
+        border-right: solid 50px transparent;
+      }
+    }
+  }
+
+  main {
+    padding: 0px 100px;
+
+    .view-frontpage .view-content .views-row {
+      &:nth-child(odd) {
+        border-right: solid 30px transparent;
+      }
+
+      &:nth-child(even) {
+        border-left: solid 30px transparent;
+      }
+    }
+  }
+
+  footer {
+    padding: 44px 165px;
+    .region-footer {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+//Tablet landscape
+@media screen and (min-width: $break-md) {
+}
+
+//Laptops and bigger
+@media screen and (min-width: $break-lg) {
+  main {
+    padding: 0px 250px;
+  }
+}
