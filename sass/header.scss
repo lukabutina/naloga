@@ -8,9 +8,9 @@ header {
 
   .region-header {
     display: flex;
-    padding: 56px 165px;
+    padding: 56px 20px;
     justify-content: space-between;
-    width: calc(100% - 330px);
+    width: calc(100% - 40px);
     transition: all linear 0.1s;
 
     .mobile-menu {
@@ -19,7 +19,7 @@ header {
     }
 
     &.scrolled {
-      padding: 15px 165px;
+      padding: 15px 20px;
     }
 
     img {

@@ -80,6 +80,10 @@
       display: flex;
       flex-direction: column;
 
+      p {
+        margin-top: 20px;
+      }
+
       ul {
         display: flex;
         justify-content: space-between;
@@ -137,7 +141,7 @@
   }
 
   footer {
-    padding: 44px 165px;
+    padding: 44px 20px;
     .region-footer {
       display: inline-flex;
       flex-direction: row;
@@ -150,9 +154,32 @@
 @media screen and (min-width: $break-md) {
 }
 
+@media screen and (min-width: $header-width) {
+  header .region-header {
+    padding: 56px 0px;
+    margin: 0 auto;
+    max-width: $header-width;
+  }
+
+  main {
+    width: 100%;
+    max-width: $content-width;
+    margin: 240px auto 0px auto;
+  }
+
+  footer {
+    width: 100%;
+    padding: 44px 0px;
+
+    .region-footer {
+      display: flex;
+      max-width: $header-width;
+      width: 100%;
+      margin: 0px auto;
+    }
+  }
+}
+
 //Laptops and bigger
 @media screen and (min-width: $break-lg) {
-  main {
-    padding: 0px 250px;
-  }
 }
